@@ -1,0 +1,33 @@
+header {
+    background-color: $DarkBlueIntro;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        .logo img {
+            width: 120px;
+        }
+
+        ul {
+            gap: 35px;
+        }
+    }
+}
