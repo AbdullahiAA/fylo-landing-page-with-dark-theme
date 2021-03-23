@@ -13,6 +13,8 @@ body {
 
 main {
   background-color: #181f2a;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 h1, h2, h3, h4, nav, .btn {
@@ -66,6 +68,12 @@ a {
   }
   h1 {
     font-size: 2.29em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.43em;
   }
   .btn {
     width: initial;
@@ -152,5 +160,69 @@ header ul {
 
 #functionality {
   text-align: center;
+}
+
+#functionality .grid {
+  padding: 30px 10px;
+}
+
+#functionality .grid img {
+  height: 5.14em;
+  max-width: initial !important;
+  margin-bottom: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  #functionality .container {
+    width: 65%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+    -webkit-column-gap: 100px;
+            column-gap: 100px;
+  }
+}
+
+#productivity .productivity__left img {
+  display: block;
+  width: 90%;
+  margin-bottom: 1.9rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#productivity .productivity__right a {
+  color: #65e2d9;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #65e2d9;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 3px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  #productivity .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 100px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #productivity .container > * {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

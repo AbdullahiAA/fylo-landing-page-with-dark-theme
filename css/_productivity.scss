@@ -1,0 +1,33 @@
+#productivity {
+    .productivity__left img {
+        display: block;
+        width: 90%;
+        margin-bottom: 1.9rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .productivity__right a {
+        color: $cyan;
+        padding-bottom: 3px;
+        border-bottom: 1px solid $cyan;
+        display: inline-flex;
+        gap: 3px;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        .container {
+            display: flex;
+            gap: 100px;
+            justify-content: center;
+            align-items: center;
+
+            & > * {
+                flex: 1;
+            }
+        }
+    }
+
+
+}
