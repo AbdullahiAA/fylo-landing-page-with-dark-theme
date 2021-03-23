@@ -10,6 +10,10 @@ body {
     color: $white;
 }
 
+main {
+    background-color: $darkBlueMain;
+}
+
 h1, h2, h3, h4, nav, .btn {
     font-family: 'Raleway', sans-serif;
 }
@@ -38,8 +42,9 @@ a {
     max-width: 1440px;
     width: 85%;
     margin: 0 auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-top: -1px;
 }
 
 .btn {
@@ -47,9 +52,11 @@ a {
     background: linear-gradient(45deg, $cyan, $blue);
     width: 80%;
     padding: 18px 30px;
+    border: none;
+    outline: none;
     border-radius: 50px;
     font-size: 1.2em;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 @media screen and (min-width: 768px) {
