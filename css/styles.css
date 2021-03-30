@@ -15,6 +15,7 @@ main {
   background-color: #181f2a;
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-top: -2px;
 }
 
 h1, h2, h3, h4, nav, .btn {
@@ -61,13 +62,15 @@ a {
 .btn {
   display: inline-block;
   background: linear-gradient(45deg, #65e2d9, #339ecc);
+  color: white;
   width: 80%;
-  padding: 18px 30px;
+  padding: 18px 20px;
   border: none;
   outline: none;
   border-radius: 50px;
   font-size: 1.2em;
   font-weight: 600;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -84,8 +87,7 @@ a {
     font-size: 1.43em;
   }
   .btn {
-    width: initial;
-    padding: 20px 100px;
+    max-width: 350px;
   }
 }
 
@@ -182,7 +184,7 @@ header ul {
 
 @media screen and (min-width: 768px) {
   #functionality .container {
-    width: 65%;
+    width: 85%;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
@@ -190,6 +192,12 @@ header ul {
     row-gap: 40px;
     -webkit-column-gap: 100px;
             column-gap: 100px;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  #functionality .container {
+    width: 65%;
   }
 }
 
@@ -316,6 +324,33 @@ header ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+}
+
+#get-started .container {
+  background-color: #1c2431;
+  padding: 45px 30px;
+  border-radius: 5px;
+  z-index: 1;
+  text-align: center;
+}
+
+#get-started .get-started__form input {
+  padding: 18px 20px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-size: 1.2em;
+}
+
+@media screen and (min-width: 768px) {
+  #get-started .container {
+    width: 60%;
+  }
+  #get-started .get-started__top p {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 /*# sourceMappingURL=styles.css.map */
